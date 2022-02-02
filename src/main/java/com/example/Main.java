@@ -16,6 +16,6 @@ public class Main {
         //if you're using jackson. It's also a preview to your next assignment :)
         //Adventure adventure = new ObjectMapper().readValue(file, Adventure.class);
         //Gson gson = new Gson();
-        
+
     }
 }

@@ -2,19 +2,18 @@ package com.example;
 
 
 import com.google.gson.Gson;
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 
-//It may be a good idea to rename/refactor depending on the focus of your assignment.
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
 public class JSONTest {
-    @Before
-    public void setUp() {
-        // This is run before every test.
 
-    }
-
-    @Test
-    public void sanityCheck() {
-    }
 }

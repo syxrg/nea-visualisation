@@ -2,6 +2,7 @@ package com.example;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -92,5 +93,79 @@ public class SatelliteDataProcessing {
         }
 
         return satelliteDensityGreaterThan;
+    }
+
+    public int getNumberOfSatellitesOrbitingPlanet (int planetId) {
+        if (planetId <= 0 || planetId > 9) {
+            throw new IllegalArgumentException("Not a valid planet number in our Solar System");
+        }
+
+        int count = 0;
+        for (Satellite satellite : satelliteDataList) {
+            if (satellite.getId() == planetId) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public int getNumberOfSatellitesStartingWithLetter(String satelliteFirstLetter) {
+        if (satelliteFirstLetter == null || satelliteFirstLetter == "") {
+            throw new IllegalArgumentException("Satellite first letter input is null or empty");
+        }
+
+        if (satelliteFirstLetter.length() > 1 || satelliteFirstLetter.length() < 0) {
+            throw new IllegalArgumentException("");
+        }
+
+        int count = 0;
+        for (Satellite satellite : satelliteDataList) {
+            if (satellite.getName().startsWith(satelliteFirstLetter)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public double getAverageMagnitudeOfSatellitesOrbitingPlanet (int planetId) {
+        if (planetId <= 0 || planetId > 9) {
+            throw new IllegalArgumentException("Not a valid planet number in our Solar System");
+        }
+
+        List<Double> averageMagnitudeSatellites = new ArrayList<>();
+        for (Satellite satellite : satelliteDataList) {
+            if (satellite.getId() ==  planetId) {
+                double satelliteMagnitude = Double.parseDouble(satellite.getMagnitude());
+                averageMagnitudeSatellites.add(satelliteMagnitude);
+            }
+        }
+        double averageMagnitude = 0;
+        for (double magnitudeValue : averageMagnitudeSatellites) {
+            averageMagnitude = (averageMagnitude + magnitudeValue) / averageMagnitudeSatellites.size();
+        }
+
+        return averageMagnitude;
+    }
+
+    public double getAverageAlbedoOfSatellitesOrbitingPlanet (int planetId) {
+        if (planetId <= 0 || planetId > 9) {
+            throw new IllegalArgumentException("Not a valid planet number in our Solar System");
+        }
+
+        List<Double> averageAlbedoSatellites = new ArrayList<>();
+        for (Satellite satellite : satelliteDataList) {
+            if (satellite.getId() == planetId) {
+                double satelliteAlbedo = Double.parseDouble(satellite.getAlbedo());
+                averageAlbedoSatellites.add(satelliteAlbedo);
+            }
+        }
+        double averageAlbedo = 0;
+        for (double albedoValue : averageAlbedoSatellites) {
+            averageAlbedo = (averageAlbedo + albedoValue) / averageAlbedoSatellites.size();
+        }
+
+        return averageAlbedo;
     }
 }

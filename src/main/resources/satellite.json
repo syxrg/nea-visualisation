@@ -4,501 +4,451 @@
     "id": 1,
     "planetId": 3,
     "name": "Moon",
-    "gm": 4902.801,
-    "radius": 1737.5,
-    "density": 3.344,
-    "magnitude": 12.74,
-    "albedo": 0.12
+    "radius": "1737.5",
+    "density": "3.344",
+    "magnitude": "12.74",
+    "albedo": "0.12"
   },
   {
     "id": 2,
     "planetId": 4,
     "name": "Phobos",
-    "gm": 7.11E-4,
-    "radius": 11.1,
-    "density": 1.872,
-    "magnitude": 11.4,
-    "albedo": 0.071
+    "radius": "11.1",
+    "density": "1.872",
+    "magnitude": "11.4",
+    "albedo": "0.071"
   },
   {
     "id": 3,
     "planetId": 4,
     "name": "Deimos",
-    "gm": 9.9E-5,
-    "radius": 6.2,
-    "density": 1.471,
-    "magnitude": 12.45,
-    "albedo": 0.068
+    "radius": "6.2",
+    "density": "1.471",
+    "magnitude": "12.45",
+    "albedo": "0.068"
   },
   {
     "id": 4,
     "planetId": 5,
     "name": "Io",
-    "gm": 5959.916,
-    "radius": 1821.6,
-    "density": 3.528,
-    "magnitude": 5.02,
-    "albedo": 0.63
+    "radius": "1821.6",
+    "density": "3.528",
+    "magnitude": "5.02",
+    "albedo": "0.63"
   },
   {
     "id": 5,
     "planetId": 5,
     "name": "Europa",
-    "gm": 3202.739,
-    "radius": 1560.8,
-    "density": 3.013,
-    "magnitude": 5.29,
-    "albedo": 0.67
+    "radius": "1560.8",
+    "density": "3.013",
+    "magnitude": "5.29",
+    "albedo": "0.67"
   },
   {
     "id": 6,
     "planetId": 5,
     "name": "Ganymede",
-    "gm": 9887.834,
-    "radius": 2631.2,
-    "density": 1.942,
-    "magnitude": 4.61,
-    "albedo": 0.43
+    "radius": "2631.2",
+    "density": "1.942",
+    "magnitude": "4.61",
+    "albedo": "0.43"
   },
   {
     "id": 7,
     "planetId": 5,
     "name": "Callisto",
-    "gm": 7179.289,
-    "radius": 2410.3,
-    "density": 1.834,
-    "magnitude": 5.65,
-    "albedo": 0.17
+    "radius": "2410.3",
+    "density": "1.834",
+    "magnitude": "5.65",
+    "albedo": "0.17"
   },
   {
     "id": 8,
     "planetId": 5,
     "name": "Amalthea",
-    "gm": 0.138,
-    "radius": 83.45,
-    "density": 0.849,
-    "magnitude": 14.1,
-    "albedo": 0.09
+    "radius": "83.45",
+    "density": "0.849",
+    "magnitude": "14.1",
+    "albedo": "0.09"
   },
   {
     "id": 9,
     "planetId": 5,
     "name": "Himalia",
-    "gm": 0.45,
-    "radius": 85.0,
-    "density": 2.6,
-    "magnitude": 14.2,
-    "albedo": 0.04
+    "radius": "85.0",
+    "density": "2.6",
+    "magnitude": "14.2",
+    "albedo": "0.04"
   },
   {
     "id": 10,
     "planetId": 5,
     "name": "Elara",
-    "gm": 0.058,
-    "radius": 43.0,
-    "density": 2.6,
-    "magnitude": 16.0,
-    "albedo": 0.04
+    "radius": "43.0",
+    "density": "2.6",
+    "magnitude": "16.0",
+    "albedo": "0.04"
   },
   {
     "id": 11,
     "planetId": 5,
     "name": "Pasiphae",
-    "gm": 0.02,
-    "radius": 30.0,
-    "density": 2.6,
-    "magnitude": 16.8,
-    "albedo": 0.04
+    "radius": "30.0",
+    "density": "2.6",
+    "magnitude": "16.8",
+    "albedo": "0.04"
   },
   {
     "id": 12,
     "planetId": 5,
     "name": "Sinope",
-    "gm": 0.005,
-    "radius": 19.0,
-    "density": 2.6,
-    "magnitude": 18.2,
-    "albedo": 0.04
+    "radius": "19.0",
+    "density": "2.6",
+    "magnitude": "18.2",
+    "albedo": "0.04"
   },
   {
     "id": 13,
     "planetId": 5,
     "name": "Lysithea",
-    "gm": 0.0042,
-    "radius": 18.0,
-    "density": 2.6,
-    "magnitude": 18.1,
-    "albedo": 0.04
+    "radius": "18.0",
+    "density": "2.6",
+    "magnitude": "18.1",
+    "albedo": "0.04"
   },
   {
     "id": 14,
     "planetId": 5,
     "name": "Carme",
-    "gm": 0.0088,
-    "radius": 23.0,
-    "density": 2.6,
-    "magnitude": 18.1,
-    "albedo": 0.04
+    "radius": "23.0",
+    "density": "2.6",
+    "magnitude": "18.1",
+    "albedo": "0.04"
   },
   {
     "id": 15,
     "planetId": 5,
     "name": "Ananke",
-    "gm": 0.002,
-    "radius": 14.0,
-    "density": 2.6,
-    "magnitude": 19.1,
-    "albedo": 0.04
+    "radius": "14.0",
+    "density": "2.6",
+    "magnitude": "19.1",
+    "albedo": "0.04"
   },
   {
     "id": 16,
     "planetId": 5,
     "name": "Leda",
-    "gm": 7.3E-4,
-    "radius": 10.0,
-    "density": 2.6,
-    "magnitude": 19.2,
-    "albedo": 0.04
+    "radius": "10.0",
+    "density": "2.6",
+    "magnitude": "19.2",
+    "albedo": "0.04"
   },
   {
     "id": 17,
     "planetId": 5,
     "name": "Thebe",
-    "gm": 0.1,
-    "radius": 49.3,
-    "density": 3.0,
-    "magnitude": 16.0,
-    "albedo": 0.047
+    "radius": "49.3",
+    "density": "3.0",
+    "magnitude": "16.0",
+    "albedo": "0.047"
   },
   {
     "id": 18,
     "planetId": 5,
     "name": "Adrastea",
-    "gm": 5.0E-4,
-    "radius": 8.2,
-    "density": 3.0,
-    "magnitude": 18.7,
-    "albedo": 0.1
+    "radius": "8.2",
+    "density": "3.0",
+    "magnitude": "18.7",
+    "albedo": "0.1"
   },
   {
     "id": 19,
     "planetId": 5,
     "name": "Metis",
-    "gm": 0.008,
-    "radius": 21.5,
-    "density": 3.0,
-    "magnitude": 17.5,
-    "albedo": 0.061
+    "radius": "21.5",
+    "density": "3.0",
+    "magnitude": "17.5",
+    "albedo": "0.061"
   },
   {
     "id": 20,
     "planetId": 5,
     "name": "Callirrhoe",
-    "gm": 5.8E-5,
-    "radius": 4.3,
-    "density": 2.6,
-    "magnitude": 20.8,
-    "albedo": 0.04
+    "radius": "4.3",
+    "density": "2.6",
+    "magnitude": "20.8",
+    "albedo": "0.04"
   },
   {
     "id": 21,
     "planetId": 5,
     "name": "Themisto",
-    "gm": 4.6E-5,
-    "radius": 4.0,
-    "density": 2.6,
-    "magnitude": 21.0,
-    "albedo": 0.04
+    "radius": "4.0",
+    "density": "2.6",
+    "magnitude": "21.0",
+    "albedo": "0.04"
   },
   {
     "id": 22,
     "planetId": 5,
     "name": "Megaclite",
-    "gm": 1.4E-5,
-    "radius": 2.7,
-    "density": 2.6,
-    "magnitude": 21.7,
-    "albedo": 0.04
+    "radius": "2.7",
+    "density": "2.6",
+    "magnitude": "21.7",
+    "albedo": "0.04"
   },
   {
     "id": 23,
     "planetId": 5,
     "name": "Taygete",
-    "gm": 1.1E-5,
-    "radius": 2.5,
-    "density": 2.6,
-    "magnitude": 21.9,
-    "albedo": 0.04
+    "radius": "2.5",
+    "density": "2.6",
+    "magnitude": "21.9",
+    "albedo": "0.04"
   },
   {
     "id": 24,
     "planetId": 5,
     "name": "Chaldene",
-    "gm": 5.0E-6,
-    "radius": 1.9,
-    "density": 2.6,
-    "magnitude": 22.5,
-    "albedo": 0.04
+    "radius": "1.9",
+    "density": "2.6",
+    "magnitude": "22.5",
+    "albedo": "0.04"
   },
   {
     "id": 25,
     "planetId": 5,
     "name": "Harpalyke",
-    "gm": 8.0E-6,
-    "radius": 2.2,
-    "density": 2.6,
-    "magnitude": 22.2,
-    "albedo": 0.04
+    "radius": "2.2",
+    "density": "2.6",
+    "magnitude": "22.2",
+    "albedo": "0.04"
   },
   {
     "id": 26,
     "planetId": 5,
     "name": "Kalyke",
-    "gm": 1.3E-5,
-    "radius": 2.6,
-    "density": 2.6,
-    "magnitude": 21.8,
-    "albedo": 0.04
+    "radius": "2.6",
+    "density": "2.6",
+    "magnitude": "21.8",
+    "albedo": "0.04"
   },
   {
     "id": 27,
     "planetId": 5,
     "name": "Iocaste",
-    "gm": 1.3E-5,
-    "radius": 2.6,
-    "density": 2.6,
-    "magnitude": 21.8,
-    "albedo": 0.04
+    "radius": "2.6",
+    "density": "2.6",
+    "magnitude": "21.8",
+    "albedo": "0.04"
   },
   {
     "id": 28,
     "planetId": 5,
     "name": "Erinome",
-    "gm": 3.0E-6,
-    "radius": 1.6,
-    "density": 2.6,
-    "magnitude": 22.8,
-    "albedo": 0.04
+    "radius": "1.6",
+    "density": "2.6",
+    "magnitude": "22.8",
+    "albedo": "0.04"
   },
   {
     "id": 29,
     "planetId": 5,
     "name": "Isonoe",
-    "gm": 5.0E-6,
-    "radius": 1.9,
-    "density": 2.6,
-    "magnitude": 22.5,
-    "albedo": 0.04
+    "radius": "1.9",
+    "density": "2.6",
+    "magnitude": "22.5",
+    "albedo": "0.04"
   },
   {
     "id": 30,
     "planetId": 5,
     "name": "Praxidike",
-    "gm": 2.9E-5,
-    "radius": 3.4,
-    "density": 2.6,
-    "magnitude": 21.2,
-    "albedo": 0.04
+    "radius": "3.4",
+    "density": "2.6",
+    "magnitude": "21.2",
+    "albedo": "0.04"
   },
   {
     "id": 31,
     "planetId": 5,
     "name": "Autonoe",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.0,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.0",
+    "albedo": "0.04"
   },
   {
     "id": 32,
     "planetId": 5,
     "name": "Thyone",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.3,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.3",
+    "albedo": "0.04"
   },
   {
     "id": 33,
     "planetId": 5,
     "name": "Hermippe",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.1,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.1",
+    "albedo": "0.04"
   },
   {
     "id": 34,
     "planetId": 5,
     "name": "Aitne",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 22.7,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "22.7",
+    "albedo": "0.04"
   },
   {
     "id": 35,
     "planetId": 5,
     "name": "Eurydome",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 22.7,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "22.7",
+    "albedo": "0.04"
   },
   {
     "id": 36,
     "planetId": 5,
     "name": "Euanthe",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 22.8,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "22.8",
+    "albedo": "0.04"
   },
   {
     "id": 37,
     "planetId": 5,
     "name": "Euporie",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.1,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.1",
+    "albedo": "0.04"
   },
   {
     "id": 38,
     "planetId": 5,
     "name": "Orthosie",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.1,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.1",
+    "albedo": "0.04"
   },
   {
     "id": 39,
     "planetId": 5,
     "name": "Sponde",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.0,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.0",
+    "albedo": "0.04"
   },
   {
     "id": 40,
     "planetId": 5,
     "name": "Kale",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.0,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.0",
+    "albedo": "0.04"
   },
   {
     "id": 41,
     "planetId": 5,
     "name": "Pasithee",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.2,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.2",
+    "albedo": "0.04"
   },
   {
     "id": 42,
     "planetId": 5,
     "name": "Hegemone",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 22.8,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "22.8",
+    "albedo": "0.04"
   },
   {
     "id": 43,
     "planetId": 5,
     "name": "Mneme",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.3,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.3",
+    "albedo": "0.04"
   },
   {
     "id": 44,
     "planetId": 5,
     "name": "Aoede",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.5,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.5",
+    "albedo": "0.04"
   },
   {
     "id": 45,
     "planetId": 5,
     "name": "Thelxinoe",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.5,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.5",
+    "albedo": "0.04"
   },
   {
     "id": 46,
     "planetId": 5,
     "name": "Arche",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 22.8,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "22.8",
+    "albedo": "0.04"
   },
   {
     "id": 47,
     "planetId": 5,
     "name": "Kallichore",
-    "gm": 1.0E-6,
-    "radius": 1.0,
-    "density": 2.6,
-    "magnitude": 23.7,
-    "albedo": 0.04
+    "radius": "1.0",
+    "density": "2.6",
+    "magnitude": "23.7",
+    "albedo": "0.04"
   },
   {
     "id": 48,
     "planetId": 5,
     "name": "Helike",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.6,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.6",
+    "albedo": "0.04"
   },
   {
     "id": 49,
     "planetId": 5,
     "name": "Carpo",
-    "gm": 3.0E-6,
-    "radius": 1.5,
-    "density": 2.6,
-    "magnitude": 23.0,
-    "albedo": 0.04
+    "radius": "1.5",
+    "density": "2.6",
+    "magnitude": "23.0",
+    "albedo": "0.04"
   },
   {
     "id": 50,
     "planetId": 5,
     "name": "Eukelade",
-    "gm": 6.0E-6,
-    "radius": 2.0,
-    "density": 2.6,
-    "magnitude": 22.6,
-    "albedo": 0.04
+    "radius": "2.0",
+    "density": "2.6",
+    "magnitude": "22.6,",
+    "albedo": "0.04"
     }
   ]
 }

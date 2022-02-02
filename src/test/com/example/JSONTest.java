@@ -1,7 +1,6 @@
 package com.example;
 
 
-import com.example.SatelliteDataProcessing;
 import com.google.gson.Gson;
 import org.junit.Before;
 import org.junit.Test;
@@ -86,5 +85,47 @@ public class JSONTest {
     }
 
 
+    @Test
+    public void testGetNumberOfSatellitesOrbitingPlanet() {
+        assertEquals(1, satelliteData.getNumberOfSatellitesOrbitingPlanet(3));
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testInvalidInputForGetNumberOfSatellitesOrbitingPlanet () {
+        satelliteData.getNumberOfSatellitesOrbitingPlanet(10);
+    }
 
+    @Test
+    public void testGetNumberOfSatellitesStartingWithLetter() {
+        assertEquals(5, satelliteData.getNumberOfSatellitesStartingWithLetter("t"));
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testGetNumberOfSatellitesMoreThanOneLetter() {
+        satelliteData.filterSatelliteByLetter("Serena");
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testGetNumberSatellitesStartingWithNullInput() {
+        satelliteData.filterSatelliteByLetter(null);
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testGetNumberSatellitesStartingWIthEmptyInput() {
+        satelliteData.filterSatelliteByLetter("");
+    }
+
+    @Test
+    public void testGetAverageMagnitudeOfSatellitesOrbitingPlanet() {
+        assertEquals(12.74, satelliteData.getAverageMagnitudeOfSatellitesOrbitingPlanet(3), 0.5);
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testInvalidPlanetIdGetAverageMagnitudeSatellitesOrbitingPlanet() {
+        satelliteData.getAverageMagnitudeOfSatellitesOrbitingPlanet(600);
+    }
+
+    @Test
+    public void testGetAverageAlbedoOfSatellitesOrbitingPlanet() {
+        assertEquals(0.12, satelliteData.getAverageAlbedoOfSatellitesOrbitingPlanet(3), 0.1);
+    }
+    @Test (expected = IllegalArgumentException.class)
+        public void testInvalidPlanetIdGetAverageAlbedoSatellitesOrbitingPlanet() {
+            satelliteData.getAverageAlbedoOfSatellitesOrbitingPlanet(-1);
+    }
 }

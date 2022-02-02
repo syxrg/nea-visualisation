@@ -2,10 +2,8 @@ package com.example;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 
 public class SatelliteDataProcessing {
@@ -16,6 +14,11 @@ public class SatelliteDataProcessing {
         return satelliteDataList;
     }
 
+    /**
+     * Function that filters names of satellite orbiting a certain planet
+     * @param planetId the particular planet number being filtered for. eg, Mercury's planet ID is 1.
+     * @return returns first 2 names of planets that is part of planetId
+     */
     public List<String> filterSatelliteByPlanet(int planetId) {
         if (planetId <= 0 || planetId > 9) {
             throw new IllegalArgumentException("Not a valid planet number in our Solar System");
@@ -35,6 +38,11 @@ public class SatelliteDataProcessing {
         return containsSatellite;
     }
 
+    /**
+     * Function that filters names of satellites by their first letter
+     * @param satelliteFirstLetter the particular letter being filtered for. eg, Moon's first letter is M
+     * @return returns first 2 names of satellites that contains satelliteFirstLetter
+     */
     public List<String> filterSatelliteByLetter(String satelliteFirstLetter) {
         if (satelliteFirstLetter == null || satelliteFirstLetter == "") {
             throw new IllegalArgumentException("Satellite first letter input is null or empty");
@@ -58,7 +66,12 @@ public class SatelliteDataProcessing {
         return containsLetter;
     }
 
-    public List<String> filterSatelliteRadiusGreaterThan(int radius) {
+    /**
+     * Function that filters names of satellites with radius greater than a certain number
+     * @param radius the particular radius greater than being filtered for
+     * @return returns first 2 names of satellites that radius is greater than
+     */
+    public List<String> filterSatelliteRadiusGreaterThan(double radius) {
         if (radius <= 0) {
             throw new IllegalArgumentException("Negative radius is not valid");
         }
@@ -77,6 +90,11 @@ public class SatelliteDataProcessing {
         return satelliteRadiusGreaterThan;
     }
 
+    /**
+     * Function that filters names of satellites with density greater than a certain number
+     * @param density the particular denity greater than being filtered for
+     * @return returns first 2 names of satellites that density is greater than
+     */
     public List<String> filterSatelliteDensityGreaterThan (double density) {
         if (density <= 0) {
             throw new IllegalArgumentException("Negative density is not valid");
@@ -96,6 +114,11 @@ public class SatelliteDataProcessing {
         return satelliteDensityGreaterThan;
     }
 
+    /**
+     * Function that obtains number of satellites orbiting a certain planet
+     * @param planetId the particular planet number being filtered for. eg, Mercury's planet ID is 1.
+     * @return returns number of satellites orbiting planetId
+     */
     public int getNumberOfSatellitesOrbitingPlanet (int planetId) {
         if (planetId <= 0 || planetId > 9) {
             throw new IllegalArgumentException("Not a valid planet number in our Solar System");
@@ -111,6 +134,11 @@ public class SatelliteDataProcessing {
         return count;
     }
 
+    /**
+     * Function that obtains number of satellites starting with certain letter
+     * @param satelliteFirstLetter the particular letter being filtered for. eg, Moon's first letter is M
+     * @return returns number of satellites starting with satelliteFirstLetter
+     */
     public int getNumberOfSatellitesStartingWithLetter(String satelliteFirstLetter) {
         if (satelliteFirstLetter == null || satelliteFirstLetter == "") {
             throw new IllegalArgumentException("Satellite first letter input is null or empty");
@@ -122,7 +150,7 @@ public class SatelliteDataProcessing {
 
         int count = 0;
         for (Satellite satellite : satelliteDataList) {
-            if (satellite.getName().startsWith(satelliteFirstLetter)) {
+            if (satellite.getName().startsWith(satelliteFirstLetter.toUpperCase())) {
                 count++;
             }
         }
@@ -130,6 +158,11 @@ public class SatelliteDataProcessing {
         return count;
     }
 
+    /**
+     * Function that obtains average magnitude of satellite orbiting certain planet
+     * @param planetId the particular planet number being filtered for. eg, Mercury's planet ID is 1.
+     * @return returns average magnitude of satellite/s orbiting planetId
+     */
     public double getAverageMagnitudeOfSatellitesOrbitingPlanet (int planetId) {
         if (planetId <= 0 || planetId > 9) {
             throw new IllegalArgumentException("Not a valid planet number in our Solar System");
@@ -150,6 +183,11 @@ public class SatelliteDataProcessing {
         return averageMagnitude;
     }
 
+    /**
+     * Function that obtains average albedo of satellite orbiting certain planet
+     * @param planetId the particular planet number being filtered for. eg, Mercury's planet ID is 1.
+     * @return returns average albedo of satellite/s orbiting planetId
+     */
     public double getAverageAlbedoOfSatellitesOrbitingPlanet (int planetId) {
         if (planetId <= 0 || planetId > 9) {
             throw new IllegalArgumentException("Not a valid planet number in our Solar System");

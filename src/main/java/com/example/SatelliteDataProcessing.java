@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 
 public class SatelliteDataProcessing {
@@ -39,13 +40,13 @@ public class SatelliteDataProcessing {
             throw new IllegalArgumentException("Satellite first letter input is null or empty");
         }
 
-        if (satelliteFirstLetter.length() > 1 || satelliteFirstLetter.length() < 0) {
+        if (satelliteFirstLetter.length() > 1) {
             throw new IllegalArgumentException("");
         }
 
         List<String> containsLetter = new ArrayList<>();
         for (Satellite satellite : satelliteDataList) {
-            if (satellite.getName().contains(satelliteFirstLetter)) {
+            if (satellite.getName().contains(satelliteFirstLetter.toUpperCase())) {
                 containsLetter.add(satellite.getName());
             }
 
@@ -64,7 +65,7 @@ public class SatelliteDataProcessing {
 
         List<String> satelliteRadiusGreaterThan = new ArrayList<>();
         for (Satellite satellite : satelliteDataList) {
-            if (Integer.parseInt(satellite.getRadius()) >= radius ) {
+            if (Double.parseDouble(satellite.getRadius()) >= radius ) {
                 satelliteRadiusGreaterThan.add(satellite.getName());
             }
 
@@ -76,14 +77,14 @@ public class SatelliteDataProcessing {
         return satelliteRadiusGreaterThan;
     }
 
-    public List<String> filterSatelliteDensityGreaterThan (int density) {
+    public List<String> filterSatelliteDensityGreaterThan (double density) {
         if (density <= 0) {
             throw new IllegalArgumentException("Negative density is not valid");
         }
 
         List<String> satelliteDensityGreaterThan = new ArrayList<>();
         for (Satellite satellite : satelliteDataList) {
-            if (Integer.parseInt(satellite.getDensity()) >= density) {
+            if (Double.parseDouble(satellite.getDensity()) >= density) {
                 satelliteDensityGreaterThan.add(satellite.getName());
             }
 
